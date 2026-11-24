@@ -1,0 +1,7 @@
+[
+ {"id":"s1","cat":"urgent","pin":true,"title":"Weather advisory","body":"Fishers and boat operators: check MDRRMO updates before heading out to sea.","ts":1795600000000},
+ {"id":"s2","cat":"service","pin":false,"title":"Business permit renewal","body":"Renewal is ongoing at the LGU Compound. Bring last year's permit and barangay clearance.","ts":1795590000000},
+ {"id":"s3","cat":"event","pin":false,"title":"Community clean-up drive","body":"Saturday 6:00 AM, Poblacion beachfront. Gloves and sacks provided.","ts":1795580000000},
+ {"id":"s4","cat":"job","pin":false,"title":"Job openings at the LGU","body":"Visit the HRMO for open positions and requirements.","ts":1795570000000},
+ {"id":"s5","cat":"general","pin":false,"title":"Welcome to the Tudela Digital Bulletin Board","body":"Posts are stored in this GitHub repository and refresh automatically.","ts":1795560000000}
+]

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Municipality of Tudela, Camotes, Cebu | Official LGU Portal</title>
+<style>
+:root{--bg:#f6f8f5;--surf:#fff;--ink:#14231c;--mute:#5b6b63;--pri:#0b6b4a;--pri2:#0e8a5f;--acc:#e0a526;--bd:#dbe4de;--red:#c0392b;--sh:0 2px 10px rgba(0,0,0,.07);color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1612;--surf:#16211b;--ink:#e8f0eb;--mute:#9db0a5;--pri:#35c28d;--pri2:#2aa676;--bd:#2a3a32;--sh:0 2px 10px rgba(0,0,0,.4);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1612;--surf:#16211b;--ink:#e8f0eb;--mute:#9db0a5;--pri:#35c28d;--pri2:#2aa676;--bd:#2a3a32;--sh:0 2px 10px rgba(0,0,0,.4);color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:70px}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--pri)}.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+header{position:sticky;top:0;z-index:20;background:var(--surf);border-bottom:1px solid var(--bd);box-shadow:var(--sh)}
+.bar{display:flex;align-items:center;gap:12px;height:60px}.brand{font-weight:800;color:var(--pri);display:flex;gap:10px;align-items:center;text-decoration:none;white-space:nowrap}
+.seal{width:34px;height:34px;border-radius:50%;background:var(--pri);color:#fff;display:grid;place-items:center;font-size:18px}
+nav{margin-left:auto;display:flex;gap:2px;overflow-x:auto}nav a{padding:8px 11px;border-radius:8px;text-decoration:none;color:var(--ink);font-size:14px;font-weight:600;white-space:nowrap}nav a:hover{background:var(--bg)}
+button{font:inherit;cursor:pointer}.btn{background:var(--pri);color:#fff;border:0;padding:9px 16px;border-radius:9px;font-weight:700}.btn.ghost{background:transparent;color:var(--pri);border:1px solid var(--pri)}.btn.sm{padding:5px 10px;font-size:13px}
+.hero{background:linear-gradient(135deg,#0b6b4a,#0a4d7a);color:#fff;padding:48px 0 40px}.hero h1{margin:0 0 6px;font-size:clamp(26px,5vw,42px)}.hero p{margin:0;opacity:.9;max-width:560px}
+.hero .meta{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap;font-size:14px}.chip{background:rgba(255,255,255,.16);padding:5px 12px;border-radius:99px}
+.ticker{background:var(--red);color:#fff;font-weight:600;font-size:14px;overflow:hidden;white-space:nowrap;display:none}.ticker.on{display:block}.ticker div{display:inline-block;padding:7px 0;padding-left:100%;animation:mq 28s linear infinite}@keyframes mq{to{transform:translateX(-100%)}}
+section{padding:36px 0}h2{margin:0 0 4px;font-size:26px}.sub{color:var(--mute);margin:0 0 18px}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.tile{background:var(--surf);border:1px solid var(--bd);border-radius:12px;padding:14px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:6px;box-shadow:var(--sh);transition:.15s}.tile:hover{transform:translateY(-3px);border-color:var(--pri)}.tile b{font-size:14px}.tile i{font-style:normal;font-size:26px}
+.card{background:var(--surf);border:1px solid var(--bd);border-radius:14px;padding:18px;box-shadow:var(--sh)}
+.two{display:grid;gap:16px;grid-template-columns:1.4fr 1fr}@media(max-width:760px){.two{grid-template-columns:1fr}}
+.hot{display:flex;justify-content:space-between;gap:8px;padding:9px 0;border-bottom:1px solid var(--bd);font-size:14px}.hot:last-child{border:0}
+.dbb{background:#102a20;color:#eaf5ee;border-radius:18px;padding:18px;border:3px solid #7a5a2b;box-shadow:var(--sh)}
+.dbbh{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:12px}.dbbh h2{margin:0;color:#fff}
+.live{display:inline-flex;gap:6px;align-items:center;font-size:12px;font-weight:700;background:#0a3b28;padding:4px 10px;border-radius:99px}.live:before{content:"";width:8px;height:8px;border-radius:50%;background:#888}.live.on:before{background:#3ddc84;animation:pl 1.4s infinite}@keyframes pl{50%{opacity:.3}}
+.clock{margin-left:auto;font-variant-numeric:tabular-nums;font-weight:700}
+.tools{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}.tools input,.tools select,.form input,.form select,.form textarea{padding:8px 10px;border-radius:8px;border:1px solid var(--bd);background:var(--surf);color:var(--ink);font:inherit;max-width:100%}.tools input{flex:1;min-width:140px}
+.pills{display:flex;gap:6px;flex-wrap:wrap}.pill{background:#1a3d2e;color:#cfe;border:1px solid #2f5f49;border-radius:99px;padding:4px 12px;font-size:13px}.pill.on{background:var(--acc);color:#222;border-color:var(--acc);font-weight:700}
+.notes{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.note{background:#fff8dc;color:#2b2410;border-radius:6px;padding:14px;box-shadow:3px 4px 8px rgba(0,0,0,.35);position:relative;transform:rotate(var(--r,0deg));transition:.2s}.note:hover{transform:rotate(0) scale(1.02)}
+.note.urgent{background:#ffd9d4}.note.event{background:#d9eefc}.note.service{background:#dcf5df}.note.job{background:#eadcfb}
+.note:before{content:"📌";position:absolute;top:-10px;left:50%;transform:translateX(-50%);font-size:20px}
+.note h3{margin:6px 0 4px;font-size:16px}.note p{margin:0 0 8px;font-size:14px;white-space:pre-wrap}.note small{opacity:.7;display:flex;justify-content:space-between;gap:6px;align-items:center}
+.tag{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px}.empty{text-align:center;padding:30px;opacity:.7;grid-column:1/-1}
+.form{display:grid;gap:8px;background:var(--surf);color:var(--ink);padding:14px;border-radius:12px;margin-bottom:14px}.form[hidden]{display:none}.form .row{display:flex;gap:8px;flex-wrap:wrap}
+.tv{position:fixed;inset:0;z-index:100;background:#071a12;color:#fff;display:none;flex-direction:column;padding:28px;padding-top:calc(28px + env(safe-area-inset-top,0px))}.tv.on{display:flex}
+.tv .top{display:flex;justify-content:space-between;align-items:center;font-size:22px;font-weight:800}.tv .stage{flex:1;display:grid;place-items:center;text-align:center}.tv .stage div{max-width:900px}.tv .stage h1{font-size:clamp(30px,6vw,64px);margin:10px 0}.tv .stage p{font-size:clamp(18px,3vw,32px);white-space:pre-wrap}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:9px;border-bottom:1px solid var(--bd);text-align:left}.scroll{overflow-x:auto}
+.mg{background:var(--surf);border:1px solid var(--bd);border-radius:14px;padding:16px;box-shadow:var(--sh)}.mtabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}.mtabs .pill{background:var(--bg);color:var(--ink);border-color:var(--bd);cursor:pointer}.mtabs .pill.on{background:var(--pri);color:#fff;border-color:var(--pri)}
+.mgrid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}.mi{background:var(--bg);border:1px solid var(--bd);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}.mi img,.mi video{width:100%;height:150px;object-fit:cover;background:#000;display:block;cursor:pointer}.mi video{cursor:default}.mi audio{width:100%;margin:12px 0 0}.mi .ic{height:60px;display:grid;place-items:center;font-size:34px}.mi .mt{padding:9px 11px;font-size:13px;display:flex;justify-content:space-between;gap:6px;align-items:center}.mi .mt b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lb{position:fixed;inset:0;z-index:120;background:rgba(0,0,0,.88);display:none;place-items:center;padding:20px}.lb.on{display:grid}.lb img{max-width:100%;max-height:90vh;border-radius:8px}
+.mpills{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}.mpills .pill{background:var(--surf);color:var(--ink);border-color:var(--bd);cursor:pointer}.mpills .pill.on{background:var(--pri);color:#fff;border-color:var(--pri)}
+.mgrid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}.mi{background:var(--surf);border:1px solid var(--bd);border-radius:12px;overflow:hidden;box-shadow:var(--sh);display:flex;flex-direction:column}.mi img,.mi video{width:100%;height:160px;object-fit:cover;background:#000;display:block;cursor:zoom-in}.mi video{cursor:default}.mi .aud{height:80px;display:grid;place-items:center;font-size:34px;background:var(--bg)}.mi audio{width:100%;padding:0 8px}.mi .cap{padding:10px;font-size:13px;display:flex;flex-direction:column;gap:4px;flex:1}.mi .cap b{font-size:14px;word-break:break-word}.mi .cap small{color:var(--mute);display:flex;justify-content:space-between;align-items:center;gap:6px}
+.up{display:grid;gap:8px;margin-bottom:14px}.up[hidden]{display:none}.up .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.up input[type=text]{flex:1;min-width:160px;padding:8px 10px;border-radius:8px;border:1px solid var(--bd);background:var(--surf);color:var(--ink);font:inherit}
+.lb{position:fixed;inset:0;z-index:120;background:rgba(0,0,0,.9);display:none;place-items:center;padding:20px;cursor:zoom-out}.lb.on{display:grid}.lb img{max-width:100%;max-height:100%;border-radius:8px}
+footer{background:#0b3a2a;color:#cfe3d8;padding:28px 0;font-size:14px;margin-top:20px}footer a{color:#fff}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="brand" href="#home"><span class="seal">🏝</span><span>Tudela, Camotes</span></a>
+<nav><a href="#home">Home</a><a href="#about">Tudela Camotes</a><a href="#dbb">Bulletin Board</a><a href="#media">Media</a><a href="#media">Media</a><a href="#transparency">Transparency</a><a href="#services">Services</a><a href="#more">More</a><a href="#contact">Contact</a></nav>
+<button class="btn ghost sm" id="theme" aria-label="Toggle theme">◐</button>
+</div></header>
+<div class="ticker" id="ticker"><div id="tickerTxt"></div></div>
+
+<div class="hero" id="home"><div class="wrap">
+<h1>Welcome to Tudela, Camotes, Cebu</h1>
+<p>Official portal of the Local Government Unit: services, news, public documents and live announcements for every Tudelanhon.</p>
+<div class="meta"><span class="chip">📍 LGU Compound, Southern Poblacion, Tudela 6051</span><span class="chip" id="heroClock"></span></div>
+</div></div>
+
+<section><div class="wrap">
+<h2>Quick Access</h2><p class="sub">Connect directly with the local government.</p>
+<div class="grid" id="quick"></div>
+</div></section>
+
+<section><div class="wrap two">
+<div class="card"><h2 style="font-size:22px">Message of the Municipal Mayor</h2>
+<p><i>Warm greetings to all our beloved citizens and visitors!</i></p>
+<p>It is my great honor and privilege to serve our community with dedication, transparency, and a deep commitment to progress. Our municipality continues to move forward, guided by our shared values, rich cultural heritage, and the resilient spirit of every Tudelanhon.</p>
+<p>Let us continue to support one another and work together to make Tudela a more livable, progressive, and unified community.</p>
+<p><b>GREMAN B. SOLANTE</b><br><small>Municipal Mayor · Mabuhay ang Tudela! Padayon sa pag-uswag.</small></p></div>
+<div class="card"><h2 style="font-size:22px">🚨 Emergency Hotlines</h2><div id="hot"></div></div>
+</div></section>
+
+<section id="dbb"><div class="wrap"><div class="dbb">
+<div class="dbbh"><h2>📋 Digital Bulletin Board</h2><span class="live" id="live">connecting…</span><span class="clock" id="clock"></span></div>
+<div class="tools">
+<input id="q" placeholder="Search announcements…" aria-label="Search">
+<select id="sort"><option value="new">Newest</option><option value="old">Oldest</option></select>
+<button class="btn sm" id="tvBtn">📺 Display mode</button>
+<button class="btn sm" id="newBtn" hidden>＋ Post</button>
+<button class="btn ghost sm" id="admBtn" style="color:#cfe;border-color:#2f5f49">🔑 Admin</button>
+</div>
+<div class="pills" id="pills" style="margin-bottom:14px"></div>
+<form class="form" id="form" hidden>
+<input id="fTitle" placeholder="Title" required maxlength="100">
+<textarea id="fBody" rows="3" placeholder="Details" maxlength="600"></textarea>
+<div class="row"><select id="fCat"></select><label><input type="checkbox" id="fPin"> Pin to top</label><label>Expires <input type="date" id="fExp"></label><button class="btn sm" type="submit">Publish live</button></div>
+</form>
+<div class="notes" id="notes"><div class="empty">Loading live announcements…</div></div>
+<p style="font-size:12px;opacity:.7;margin:12px 0 0">Board refreshes automatically every 20 seconds from GitHub. Only LGU admins can post.</p>
+</div></div></section>
+
+<section id="media"><div class="wrap"><h2>Media Library</h2><p class="sub">Photos, videos and audio from the municipality, stored in a live shared database.</p>
+<div class="mg"><div class="mtabs" id="mtabs"></div>
+<form class="form" id="mform" hidden><b>Upload media (editors only)</b>
+<input id="mTitle" placeholder="Title (optional)" maxlength="100">
+<input id="mFile" type="file" accept="image/*,video/*,audio/*" multiple required>
+<div class="row"><button class="btn sm" type="submit" id="mBtn">Upload</button><span id="mMsg" style="font-size:13px"></span></div></form>
+<div class="mgrid" id="mgrid"><div class="empty">Loading media…</div></div></div></div></section>
+<div class="lb" id="lb"><img id="lbImg" alt=""></div>
+<section id="media"><div class="wrap"><h2>Media Library</h2><p class="sub">Photos, videos and audio from the municipality, stored in the GitHub repository.</p>
+<div class="card">
+<div class="up" id="upBox" hidden><div class="row"><input type="file" id="upFile" accept="image/*,video/*,audio/*" multiple><input type="text" id="upCap" placeholder="Caption (optional)" maxlength="140"><button class="btn sm" id="upGo">⬆ Upload</button></div><small id="upSt" style="color:var(--mute)">Images, video or audio up to 20 MB each. Admins only.</small></div>
+<div class="row" style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px"><div class="mpills" id="mpills"></div><input id="mq" placeholder="Search media…" style="flex:1;min-width:140px;padding:8px 10px;border-radius:8px;border:1px solid var(--bd);background:var(--bg);color:var(--ink)"></div>
+<div class="mgrid" id="mgrid"><div class="empty" style="grid-column:1/-1;text-align:center;opacity:.7">Loading media…</div></div></div></div></section>
+<div class="lb" id="lb"><img id="lbImg" alt=""></div>
+
+<section id="about"><div class="wrap two">
+<div class="card"><h2 style="font-size:22px">Tudela, Camotes</h2><p>Tudela is a coastal municipality on Poro Island in the Camotes Islands, Cebu, known for white-sand beaches, fishing communities and island hospitality. Explore homestays, local delicacies and investment opportunities across the municipality.</p></div>
+<div class="card"><h2 style="font-size:22px">Explore</h2><div class="grid" style="grid-template-columns:1fr 1fr" id="more"></div></div>
+</div></section>
+
+<section id="transparency"><div class="wrap"><h2>Transparency Seal</h2><p class="sub">Public documents and full disclosure data.</p>
+<div class="card"><input id="docq" placeholder="Search documents…" style="width:100%;padding:9px;border-radius:8px;border:1px solid var(--bd);background:var(--bg);color:var(--ink);margin-bottom:10px">
+<div class="scroll"><table><thead><tr><th>Category</th><th>Document</th><th></th></tr></thead><tbody id="docs"></tbody></table></div></div></div></section>
+
+<section id="services"><div class="wrap"><h2>Programs &amp; Services</h2><p class="sub">Tap a service to view requirements in the Citizen’s Charter.</p><div class="grid" id="svc"></div></div></section>
+
+<footer id="contact"><div class="wrap">
+<b>Municipality of Tudela, Camotes, Cebu</b><br>LGU Compound, Southern Poblacion, Tudela, Cebu 6051<br>
+Official site: <a href="https://www.tudela-cebu.gov.ph/" rel="noopener">tudela-cebu.gov.ph</a><br><br>
+<small>Concept portal inspired by the official LGU website.</small></div></footer>
+
+<div class="tv" id="tv"><div class="top"><span>🏝 Municipality of Tudela · Bulletin</span><span><span id="tvClock"></span> <button class="btn sm" id="tvX">✕ Exit</button></span></div><div class="stage"><div id="tvStage"></div></div></div>
+
+<script>
+var CATS=[["all","All"],["urgent","Urgent"],["event","Events"],["service","Services"],["job","Jobs"],["general","General"]];
+var HOT=[["LGU Tudela","lgu"],["PNP","09171735487"],["BFP","09175601156"],["PCG","09955700519"],["MDRRMO","09677245178"],["RHU","09523577239"]];
+var QUICK=[["📜","Citizen’s Charter","citizens-charter.html"],["📊","Full Disclosure","full-disclosure-policy.html"],["🌱","SDGs","sustainable-development.html"],["📑","Resolutions","resolution.html"],["⚖️","Ordinances","ordinances.html"],["📝","Executive Orders","executive-orders.html"],["🏡","Homestay","homestay.html"],["🍰","Delicacies","delicacies.html"],["💼","Investments","investment-opportunities.html"],["🏭","Major Industries","major-industries.html"],["🏪","Businesses","business-establishments.html"],["🛎","Programs","program-and-services.html"]];
+var DOCS=[["Citizen’s Charter","Citizen’s Charter 2025","citizens-charter.html"],["Full Disclosure","Full Disclosure Policy 2025","full-disclosure-policy.html"],["SDG","Sustainable Development Goals","sustainable-development.html"],["Legislation","Resolutions","resolution.html"],["Legislation","Municipal Ordinances","ordinances.html"],["Legislation","Executive Orders","executive-orders.html"],["Issuance","Document Issuances","document-issuance.html"]];
+var SVC=[["🏥","Health (RHU)"],["🌾","Agriculture"],["🧾","Business Permits"],["📄","Civil Registry"],["🛡","Disaster Risk Reduction"],["👨‍👩‍👧","Social Welfare"],["🎓","Scholarships"],["🏗","Engineering"]];
+var BASE="https://www.tudela-cebu.gov.ph/";
+function $(i){return document.getElementById(i)}
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+function p2(n){return String(n).padStart(2,"0")}
+function tick(){var d=new Date();var s=d.toLocaleDateString("en-PH",{weekday:"short",month:"short",day:"numeric"})+" · "+p2(d.getHours())+":"+p2(d.getMinutes())+":"+p2(d.getSeconds());["clock","tvClock","heroClock"].forEach(function(i){$(i).textContent=s})}
+setInterval(tick,1000);tick();
+/* static content */
+QUICK.forEach(function(q){var a=el("a","tile");a.href=BASE+q[2];a.target="_blank";a.rel="noopener";a.appendChild(el("i",null,q[0]));a.appendChild(el("b",null,q[1]));$("quick").appendChild(a)});
+HOT.forEach(function(h){var r=el("div","hot");r.appendChild(el("b",null,h[0]));if(h[1]==="lgu")r.appendChild(el("span",null,"via official site"));else{var a=el("a",null,h[1]);a.href="tel:"+h[1];r.appendChild(a)}$("hot").appendChild(r)});
+[["Homestay","homestay.html"],["Delicacies","delicacies.html"],["Investment","investment-opportunities.html"],["Incentives","investment-incentives.html"]].forEach(function(m){var a=el("a","btn ghost sm",m[0]);a.href=BASE+m[1];a.target="_blank";a.rel="noopener";a.style.textAlign="center";$("more").appendChild(a)});
+SVC.forEach(function(s){var a=el("a","tile");a.href=BASE+"citizens-charter.html";a.target="_blank";a.rel="noopener";a.appendChild(el("i",null,s[0]));a.appendChild(el("b",null,s[1]));$("svc").appendChild(a)});
+function drawDocs(){var q=$("docq").value.toLowerCase();var tb=$("docs");tb.textContent="";DOCS.filter(function(d){return (d[0]+d[1]).toLowerCase().indexOf(q)>-1}).forEach(function(d){var r=el("tr");r.appendChild(el("td",null,d[0]));r.appendChild(el("td",null,d[1]));var td=el("td");var a=el("a",null,"Open ↗");a.href=BASE+d[2];a.target="_blank";a.rel="noopener";td.appendChild(a);r.appendChild(td);tb.appendChild(r)})}
+$("docq").oninput=drawDocs;drawDocs();
+/* theme */
+$("theme").onclick=function(){var r=document.documentElement;var dark=getComputedStyle(r).colorScheme==="dark";r.setAttribute("data-theme",dark?"light":"dark")};
+/* DBB */
+var posts=[],cat="all",tvTimer=null,tvIdx=0,canEdit=false,col=null;
+CATS.forEach(function(c){var b=el("button","pill"+(c[0]==="all"?" on":""),c[1]);b.dataset.c=c[0];b.onclick=function(){cat=c[0];[].forEach.call($("pills").children,function(x){x.classList.toggle("on",x===b)});draw()};$("pills").appendChild(b);if(c[0]!=="all"){var o=el("option",null,c[1]);o.value=c[0];$("fCat").appendChild(o)}});
+$("q").oninput=draw;$("sort").onchange=draw;
+function live(on,t){var l=$("live");l.className="live"+(on?" on":"");l.textContent=t}
+function visible(){var now=Date.now(),q=$("q").value.toLowerCase();
+ var a=posts.filter(function(p){return (!p.exp||p.exp>now)&&(cat==="all"||p.cat===cat)&&(p.title+" "+p.body).toLowerCase().indexOf(q)>-1});
+ var dir=$("sort").value==="old"?1:-1;a.sort(function(x,y){return (y.pin?1:0)-(x.pin?1:0)||dir*(x.ts-y.ts)});return a}
+function draw(){var box=$("notes");box.textContent="";var a=visible();
+ if(!a.length){box.appendChild(el("div","empty","No announcements to show."))}
+ a.forEach(function(p,i){var n=el("div","note "+p.cat);n.style.setProperty("--r",((i%5)-2)*0.8+"deg");
+  n.appendChild(el("span","tag",(p.pin?"★ Pinned · ":"")+p.cat));n.appendChild(el("h3",null,p.title));if(p.body)n.appendChild(el("p",null,p.body));
+  var f=el("small");f.appendChild(el("span",null,new Date(p.ts).toLocaleString("en-PH",{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"})+(p.exp?" · until "+new Date(p.exp).toLocaleDateString("en-PH",{month:"short",day:"numeric"}):"")));
+  if(canEdit){var d=el("button","btn sm","Delete");d.style.background="#a33";d.onclick=function(){if(confirm("Remove this post?"))col.doc(p.id).delete().catch(function(e){alert("Could not delete: "+(e&&e.message||e))})};f.appendChild(d)}
+  n.appendChild(f);box.appendChild(n)});
+ var urg=posts.filter(function(p){return p.cat==="urgent"&&(!p.exp||p.exp>Date.now())});
+ $("ticker").classList.toggle("on",urg.length>0);$("tickerTxt").textContent=urg.map(function(p){return "⚠ "+p.title+(p.body?" — "+p.body.replace(/\s+/g," "):"")}).join("      ");}
+setInterval(draw,60000);
+/* TV mode */
+function tvShow(){var a=visible();var s=$("tvStage");s.textContent="";var w=el("div");if(!a.length){w.appendChild(el("h1",null,"Welcome to Tudela"))}else{var p=a[tvIdx%a.length];w.appendChild(el("span","tag",p.cat));w.appendChild(el("h1",null,p.title));w.appendChild(el("p",null,p.body||""))}s.appendChild(w);tvIdx++}
+$("tvBtn").onclick=function(){$("tv").classList.add("on");tvIdx=0;tvShow();tvTimer=setInterval(tvShow,7000);if($("tv").requestFullscreen)$("tv").requestFullscreen().catch(function(){})};
+$("tvX").onclick=function(){$("tv").classList.remove("on");clearInterval(tvTimer);if(document.fullscreenElement)document.exitFullscreen()};
+/* media library */
+var media=[],mType="all",mcol=null,assetsApi=null,mEdit=false;
+[["all","All"],["image","🖼 Images"],["video","🎬 Videos"],["audio","🎧 Audio"]].forEach(function(c){var b=el("button","pill"+(c[0]==="all"?" on":""),c[1]);b.onclick=function(){mType=c[0];[].forEach.call($("mpills").children,function(x){x.classList.toggle("on",x===b)});drawMedia()};$("mpills").appendChild(b)});
+$("mq").oninput=function(){drawMedia()};$("lb").onclick=function(){$("lb").classList.remove("on")};
+function drawMedia(){var g=$("mgrid");g.textContent="";var q=$("mq").value.toLowerCase();
+ var a=media.filter(function(m){return (mType==="all"||m.type===mType)&&(m.name+" "+m.cap).toLowerCase().indexOf(q)>-1}).sort(function(x,y){return y.ts-x.ts});
+ if(!a.length){g.appendChild(el("div","empty","No media yet."));g.lastChild.style.cssText="grid-column:1/-1;text-align:center;opacity:.7;padding:24px";return}
+ a.forEach(function(m){var c=el("div","mi");var u=mediaUrl(m);
+  if(m.type==="image"){var i=el("img");i.src=u;i.alt=m.cap||m.name;i.loading="lazy";i.onclick=function(){$("lbImg").src=u;$("lb").classList.add("on")};c.appendChild(i)}
+  else if(m.type==="video"){var v=el("video");v.src=u;v.controls=true;v.preload="metadata";v.setAttribute("playsinline","");c.appendChild(v)}
+  else{c.appendChild(el("div","aud","🎵"));var au=el("audio");au.src=u;au.controls=true;au.preload="none";c.appendChild(au)}
+  var cp=el("div","cap");cp.appendChild(el("b",null,m.cap||m.name));var s=el("small");s.appendChild(el("span",null,m.type+" · "+new Date(m.ts).toLocaleDateString("en-PH",{month:"short",day:"numeric",year:"numeric"})));
+  if(mEdit){var d=el("button","btn sm","Delete");d.style.background="#a33";d.onclick=function(){if(!confirm("Delete this file?"))return;mcol.doc(m.id).delete().then(function(){return assetsApi&&assetsApi.delete(m.aid)}).catch(function(e){alert("Could not delete: "+(e&&e.message||e))})};s.appendChild(d)}
+  cp.appendChild(s);c.appendChild(cp);g.appendChild(c)})}
+$("upGo").onclick=async function(){var fs=$("upFile").files;if(!fs.length||!assetsApi||!mcol){$("upSt").textContent="Choose a file first.";return}
+ var btn=$("upGo");btn.disabled=true;var ok=0;
+ for(var i=0;i<fs.length;i++){var f=fs[i];var t=f.type.split("/")[0];
+  if(["image","video","audio"].indexOf(t)<0){$("upSt").textContent=f.name+": unsupported type";continue}
+  if(f.size>20*1024*1024){$("upSt").textContent=f.name+": over 20 MB";continue}
+  $("upSt").textContent="Uploading "+(i+1)+"/"+fs.length+": "+f.name+"…";
+  try{var r=await assetsApi.upload(f);await mcol.add({aid:r.id,type:t,name:f.name,cap:$("upCap").value.trim(),ts:Date.now()});ok++}catch(e){$("upSt").textContent="Failed: "+(e&&e.message||e)}}
+ btn.disabled=false;$("upFile").value="";if(ok){$("upCap").value="";$("upSt").textContent=ok+" file(s) uploaded."}};
+$("newBtn").onclick=function(){$("form").hidden=!$("form").hidden};
+$("form").onsubmit=function(e){e.preventDefault();var ex=$("fExp").value?new Date($("fExp").value+"T23:59:59").getTime():null;
+ var doc={title:$("fTitle").value.trim(),body:$("fBody").value.trim(),cat:$("fCat").value,pin:$("fPin").checked,ts:Date.now()};if(ex)doc.exp=ex;
+ col.add(doc).then(function(){$("form").reset();$("form").hidden=true}).catch(function(err){alert("Could not post: "+(err&&err.message||err))})};
+/* ===== GitHub backend: repo = database ===== */
+var CFG={owner:"",repo:"",branch:"main"}; /* leave blank to auto-detect from GitHub Pages URL (owner.github.io/repo) */
+if(!CFG.owner&&/github\.io$/.test(location.hostname)){CFG.owner=location.hostname.split(".")[0];CFG.repo=location.pathname.split("/")[1]||CFG.owner+".github.io"}
+try{var sv=JSON.parse(localStorage.getItem("tudela_cfg")||"null");if(sv&&!CFG.owner){CFG.owner=sv.owner;CFG.repo=sv.repo;CFG.branch=sv.branch||"main"}}catch(e){}
+var TOKEN="";try{TOKEN=localStorage.getItem("tudela_token")||""}catch(e){}
+var API="https://api.github.com/repos/";var etags={};var cache={};
+function hd(raw){var h={"Accept":raw?"application/vnd.github.raw+json":"application/vnd.github+json"};if(TOKEN)h["Authorization"]="Bearer "+TOKEN;return h}
+function enc(path){return path.split("/").map(encodeURIComponent).join("/")}
+function cu(path){return API+CFG.owner+"/"+CFG.repo+"/contents/"+enc(path)}
+function mediaUrl(m){return "https://raw.githubusercontent.com/"+CFG.owner+"/"+CFG.repo+"/"+CFG.branch+"/"+enc(m.aid)}
+function b64utf8(t){return btoa(unescape(encodeURIComponent(t)))}
+function unb64(b){return decodeURIComponent(escape(atob(b.replace(/\n/g,""))))}
+async function readJson(file){ /* conditional request: 304 does not use rate limit */
+ var h=hd(true);if(etags[file])h["If-None-Match"]=etags[file];
+ var r=await fetch(cu(file)+"?ref="+CFG.branch+"&t=0",{headers:h,cache:"no-store"});
+ if(r.status===304)return cache[file];
+ if(r.status===404){cache[file]=[];return []}
+ if(!r.ok)throw new Error("GitHub "+r.status);
+ etags[file]=r.headers.get("ETag");var v=JSON.parse(await r.text());cache[file]=Array.isArray(v)?v:[];return cache[file]}
+async function mutate(file,fn){
+ for(var n=0;n<3;n++){
+  var r=await fetch(cu(file)+"?ref="+CFG.branch,{headers:hd(false),cache:"no-store"});var sha,arr=[];
+  if(r.status===200){var j=await r.json();sha=j.sha;arr=JSON.parse(unb64(j.content))}else if(r.status!==404)throw new Error("GitHub "+r.status);
+  var out=fn(arr)||arr;
+  var body={message:"Update "+file+" via Tudela portal",content:b64utf8(JSON.stringify(out,null,1)),branch:CFG.branch};if(sha)body.sha=sha;
+  var w=await fetch(cu(file),{method:"PUT",headers:Object.assign({"Content-Type":"application/json"},hd(false)),body:JSON.stringify(body)});
+  if(w.ok){delete etags[file];return}
+  if(w.status===409||w.status===422)continue;
+  throw new Error(w.status===401||w.status===403||w.status===404?"Not allowed. Check your token has Contents: write on this repo.":"GitHub "+w.status)}
+ throw new Error("Conflict, try again")}
+function newId(){return Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
+function store(file){return {
+ add:function(d){d.id=newId();return mutate(file,function(a){a.push(d);return a}).then(load)},
+ doc:function(id){return {delete:function(){return mutate(file,function(a){return a.filter(function(x){return x.id!==id})}).then(load)}}}}}
+col=store("data/bulletins.json");mcol=store("data/media.json");
+function b64file(f){return new Promise(function(res,rej){var r=new FileReader();r.onload=function(){res(String(r.result).split(",")[1])};r.onerror=rej;r.readAsDataURL(f)})}
+assetsApi={
+ upload:async function(f){var path="uploads/"+Date.now()+"-"+f.name.replace(/[^\w.\-]+/g,"_");
+  var w=await fetch(cu(path),{method:"PUT",headers:Object.assign({"Content-Type":"application/json"},hd(false)),body:JSON.stringify({message:"Upload "+f.name,content:await b64file(f),branch:CFG.branch})});
+  if(!w.ok)throw new Error(w.status===401||w.status===403?"Token cannot write to this repo":"Upload failed ("+w.status+")");return {id:path}},
+ delete:async function(path){if(path.indexOf("uploads/")!==0)return;var r=await fetch(cu(path)+"?ref="+CFG.branch,{headers:hd(false)});if(!r.ok)return;var j=await r.json();
+  await fetch(cu(path),{method:"DELETE",headers:Object.assign({"Content-Type":"application/json"},hd(false)),body:JSON.stringify({message:"Delete "+path,sha:j.sha,branch:CFG.branch})})}};
+async function load(){
+ try{
+  var b=await readJson("data/bulletins.json"),m=await readJson("data/media.json");
+  posts=b.map(function(x){return {id:String(x.id),title:String(x.title||""),body:String(x.body||""),cat:CATS.some(function(c){return c[0]===x.cat})?x.cat:"general",pin:!!x.pin,ts:+x.ts||0,exp:x.exp?+x.exp:null}});
+  media=m.map(function(x){var a=String(x.aid||"");return {id:String(x.id),aid:a.indexOf("uploads/")===0&&a.indexOf("..")<0?a:"",type:["image","video","audio"].indexOf(x.type)>-1?x.type:"image",name:String(x.name||""),cap:String(x.cap||""),ts:+x.ts||0}}).filter(function(x){return x.aid});
+  live(true,"LIVE · "+posts.length+" posts · synced "+p2(new Date().getHours())+":"+p2(new Date().getMinutes()));
+  draw();drawMedia();if($("tv").classList.contains("on"))tvShow();
+ }catch(e){live(false,"can't reach GitHub")}}
+function setAdmin(on){canEdit=on;mEdit=on;$("newBtn").hidden=!on;$("upBox").hidden=!on;$("admBtn").textContent=on?"🔓 Sign out":"🔑 Admin";draw();drawMedia()}
+async function verify(){if(!TOKEN||!CFG.owner)return setAdmin(false);
+ try{var r=await fetch(API+CFG.owner+"/"+CFG.repo,{headers:hd(false)});var j=await r.json();setAdmin(!!(r.ok&&j.permissions&&j.permissions.push))}catch(e){setAdmin(false)}}
+$("admBtn").onclick=async function(){
+ if(canEdit){TOKEN="";try{localStorage.removeItem("tudela_token")}catch(e){}return setAdmin(false)}
+ if(!CFG.owner||!CFG.repo){var rp=prompt("GitHub repo (owner/repo):");if(!rp||rp.indexOf("/")<0)return;CFG.owner=rp.split("/")[0].trim();CFG.repo=rp.split("/")[1].trim();try{localStorage.setItem("tudela_cfg",JSON.stringify(CFG))}catch(e){}}
+ var t=prompt("Paste a GitHub fine-grained token (Contents: Read and write on "+CFG.owner+"/"+CFG.repo+"). It stays in this browser only:");if(!t)return;
+ TOKEN=t.trim();try{localStorage.setItem("tudela_token",TOKEN)}catch(e){}await verify();if(!canEdit)alert("That token can't write to "+CFG.owner+"/"+CFG.repo+".");load()};
+draw();drawMedia();
+(async function(){
+ if(!CFG.owner||!CFG.repo){live(false,"set repo to connect");$("notes").textContent="";$("notes").appendChild(el("div","empty","Deploy on GitHub Pages or tap Admin and enter owner/repo to connect."));$("mgrid").textContent="";return}
+ await verify();await load();
+ setInterval(load,20000);document.addEventListener("visibilitychange",function(){if(!document.hidden)load()});
+})();
+</script>
+</body>
+</html>
